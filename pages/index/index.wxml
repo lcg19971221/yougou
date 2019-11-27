@@ -1,0 +1,23 @@
+<view class="view">
+    <view class="top">
+       <view class="input">
+            <text class=""></text>
+              
+           搜索
+       </view>
+         
+    </view>
+    <!--
+        轮播图
+        
+    -->
+    <swiper autoplay indicator-dots circular>
+        <swiper-item wx:for="{{imagesList}}" wx:key="goods_id">
+            <image mode="widthFix" src="{{item.image_src}}"></image>
+              
+              
+        </swiper-item>
+          
+    </swiper>
+      
+</view>
